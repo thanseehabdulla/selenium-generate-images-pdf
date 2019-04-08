@@ -6,6 +6,7 @@ from pyvirtualdisplay import Display
 import time
 import json
 
+
 def get_file_screenshot(url):
     try:
         display = Display(visible=0, size=(1800, 1600))
@@ -42,50 +43,4 @@ with open('project.json') as json_file:
 
 get_file_screenshot(url)
 
-# write-html.py
 
-f = open('new.html', 'w')
-
-message = """<html>
-
-<head>
-    <title>Flex</title>
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<style>
-
-    .margintop{
-        margin-top:10px;
-    }
-</style>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-<div class="main">
-
-    <div class="row">
-    <div class="col-lg-6 margintop"><img src="test2.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test5.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test4.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test7.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test6.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test8.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test9.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test11.png" style="width:100%" /></div>
-    <div class="col-lg-6 margintop"><img src="test10.png" style="width:100%" /></div>
-
-
-    </div>
-
-</div>
-
-</body>
-
-</html>"""
-
-f.write(message)
-f.close()
