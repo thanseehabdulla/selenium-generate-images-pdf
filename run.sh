@@ -4,8 +4,12 @@ echo "Please wait while we are activating the environment for python"
 . venv/bin/activate
 echo "success !!!"
 echo ""
-echo "Executing the python program to generate images and create html"
+echo "Executing the python program to generate images"
 python test.py
+echo "success"
+echo ""
+echo "generating html from images and json"
+python writehtml.py
 echo "success !!!"
 echo ""
 echo "Deactivating the python environment"
