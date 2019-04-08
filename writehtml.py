@@ -1,14 +1,13 @@
+import json
 # write-html.py
 
 url = ""
 classes = []
 
 with open('project.json') as json_file:
-    data = json_file
-    for p in data['data']:
-        url = p['url']
-        classes = p['classess']
-        images = p['images']
+    data = json.loads(json_file.read())
+    classes = data['classes']
+    images = data['images']
 
 
 f = open('new.html', 'w')

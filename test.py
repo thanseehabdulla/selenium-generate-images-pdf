@@ -37,9 +37,8 @@ def get_file_screenshot(url):
 url = ""
 
 with open('project.json') as json_file:
-    data = json_file
-    for p in data['data']:
-        url = p['url']
+    data = json.loads(json_file.read())
+    url = data['url']
 
 get_file_screenshot(url)
 
