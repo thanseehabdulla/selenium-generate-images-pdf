@@ -15,8 +15,6 @@ for(let i = 2; i<=n;i++) {
 
         doc.image('test' + i + '.png', {
             fit: [500, 500],
-            align: 'center',
-            valign: 'center'
         });
         if(i !== n)
         doc.addPage()
