@@ -1,4 +1,4 @@
-# selenium-generate-images-pdf
+# selenium-puppeteer-generate-images-pdf
 
 ***Install Nodejs***
 
