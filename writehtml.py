@@ -1,16 +1,18 @@
 import json
+import os
 # write-html.py
 
-url = ""
-classes = []
-
-with open('project.json') as json_file:
-    data = json.loads(json_file.read())
-    classes = data['classes']
-    images = data['images']
+data = json.load(open('project.json', 'r'))
+classes = data['classes']
+images = data['images']
+output_image_folder = data['output_image_folder']
+output_html_folder = data['output_html_folder']
 
 
-f = open('new.html', 'w')
+if not os.path.exists(os.path.dirname(os.path.realpath(__file__)) +"/"+ output_html_folder):
+    os.makedirs(output_html_folder)
+
+f = open(output_html_folder+'/new.html', 'w')
 
 message = """<html>
 
@@ -35,10 +37,8 @@ message = """<html>
 
     <div class="row">"""
 
-message += """"<div class="col-lg-6 margintop"><img src="test2.png" style="width:100%" /></div>"""
-
 for i in range(len(images)):
-    message += """<div class="margintop""" + classes[i] + """ "><img src=""" + images[
+    message += """<div class="margintop """ + classes[i] + """ "><img src=../""" + output_image_folder + "/" + images[
         i] + """ style="width:100%" /></div>"""
 
 message += """</div>

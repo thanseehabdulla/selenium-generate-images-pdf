@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+#/bin/bash
 
 echo "Please wait while we are activating the environment for python"
 . venv/bin/activate
@@ -20,15 +21,11 @@ echo "creating html to generate flex screenshot"
 echo "success !!!"
 echo ""
 echo "taking screenshot and converting to pdf"
-#node screenshot.js
-sleep 100
+node screenshot.js
 echo "success !!!"
 echo ""
-echo "running node libary to generate pdf"
-node index.js
-
-echo "success !!!"
 echo ""
 echo "output : screenshot.png , screenshot.pdf, output.pdf, ...test11.png"
 echo ""
+
 echo "Done !!!"
