@@ -29,7 +29,7 @@ select yn in "Yes" "No"; do
     esac
 done
 echo "Executing the python program to generate images"
-python test.py
+python generate_images.py
 echo "success"
 echo ""
 echo "generating html from images and json"

@@ -6,7 +6,7 @@ echo "Please wait while we are activating the environment for python"
 echo "success !!!"
 echo ""
 echo "Executing the python program to generate images"
-python test.py
+python generate_images.py
 echo "success"
 echo ""
 echo "generating html from images and json"

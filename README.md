@@ -17,5 +17,7 @@ sudo npm install -g yarn
 
 ./run.sh
 
+configure path and filename under project.json
+
 
 Happy coding!
