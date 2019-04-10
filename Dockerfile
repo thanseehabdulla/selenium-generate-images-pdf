@@ -13,4 +13,4 @@ CMD ["echo","running automation"]
 
 CMD ./run.sh
 
-CMD sleep(10)
+CMD sleep 100
