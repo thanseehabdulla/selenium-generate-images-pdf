@@ -9,4 +9,8 @@ RUN git clone https://github.com/thanseehabdulla/selenium-puppeteer-generate-ima
 
 RUN  npm install -g yarn puppeteer && cd test && yarn && pip3 install -r requirements.txt
 
-CMD ["echo","Hello World"]
+CMD ["echo","running automation"]
+
+CMD ./run.sh
+
+CMD sleep(10)
