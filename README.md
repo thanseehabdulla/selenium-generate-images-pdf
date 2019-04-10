@@ -20,4 +20,16 @@ sudo npm install -g yarn
 configure path and filename under project.json
 
 
+Docker
+Configure Dockerfile
+
+
+***Pull***
+sudo docker pull thanseehabdulla/selenium-puppeteer-generate-images-pdf-html
+
+
+# To copy output pdf
+sudo docker cp <container-id>:/test/output/screenshot.pdf ~/Desktop/outputs.pdf
+
+
 Happy coding!
