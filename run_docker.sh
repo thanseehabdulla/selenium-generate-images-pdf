@@ -2,6 +2,7 @@
 #/bin/bash
 
 
+git pull origin master
 
 echo "Executing the python program to generate images"
 python generate_images.py
@@ -25,3 +26,5 @@ echo "output : screenshot.png , screenshot.pdf, output.pdf, ...test11.png"
 echo ""
 
 echo "Done !!!"
+
+sleep 100
