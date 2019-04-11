@@ -36,3 +36,5 @@ echo "output : screenshot.png , screenshot.pdf, output.pdf, ...test11.png"
 echo ""
 
 echo "Done !!!"
+
+sleep 10
