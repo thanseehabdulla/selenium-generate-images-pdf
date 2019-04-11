@@ -15,4 +15,4 @@ CMD ./run.sh
 
 CMD ["echo","completed automation"]
 
-CMD sleep 100
+#CMD sleep 100
