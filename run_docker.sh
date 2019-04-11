@@ -8,11 +8,11 @@ ls
 git pull origin master
 
 echo "Executing the python program to generate images"
-python generate_images.py
+python3 generate_images.py
 echo "success"
 echo ""
 echo "generating html from images and json"
-python writehtml.py
+python3 writehtml.py
 echo "success !!!"
 echo ""
 
