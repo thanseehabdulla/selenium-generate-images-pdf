@@ -5,7 +5,7 @@
   "output_image_folder":"images",
   "output_html_folder":"html",
   "output_image_name":"test",
-  "file_path":"./html/new.html",
+  "file_path":"file:///home/sinergia/Desktop/davis/selenium/html/new.html",
   "images":[
     "test2.png",
     "test4.png",

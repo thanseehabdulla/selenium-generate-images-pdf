@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "images-to-pdf": "^1.0.3",
+    "puppeteer": "^1.14.0"
+  }
+}
