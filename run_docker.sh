@@ -5,6 +5,8 @@ cd test
 
 ls
 
+-v $(pwd)
+
 pwd
 
 git pull origin master
