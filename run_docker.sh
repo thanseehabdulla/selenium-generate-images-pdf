@@ -20,6 +20,7 @@ echo ""
 echo "creating html to generate flex screenshot"
 echo "success !!!"
 echo ""
+yarn
 echo "taking screenshot and converting to pdf"
 node screenshot.js
 echo "success !!!"

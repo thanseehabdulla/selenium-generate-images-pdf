@@ -3,7 +3,7 @@ FROM ubuntu
 
 MAINTAINER Abdulla Thanseeh <thanseehabdulla@gmail.com>
 
-RUN apt-get update && apt-get install -y git nodejs firefox chromium-browser npm python3 python3-pip apt-utils
+RUN apt-get update && apt-get install -y git nodejs firefox chromium-browser npm python3 python3-pip apt-utils xvfb
 
 RUN git clone https://github.com/thanseehabdulla/selenium-puppeteer-generate-images-pdf-html.git test
 
