@@ -5,6 +5,8 @@ cd test
 
 ls
 
+pwd
+
 git pull origin master
 
 echo "Executing the python program to generate images"
