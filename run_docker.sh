@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #/bin/bash
 
+cd test
+
 ls
 
 git pull origin master
