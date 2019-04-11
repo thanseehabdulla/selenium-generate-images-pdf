@@ -11,4 +11,4 @@ RUN  npm install -g yarn puppeteer && cd test && yarn && pip3 install -r require
 
 CMD ["echo","running automation"]
 
-CMD ./test/run.sh
+CMD ./test/run_docker.sh
