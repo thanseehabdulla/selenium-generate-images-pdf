@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #/bin/bash
 
+cd test
 
 git pull origin master
 
@@ -27,4 +28,4 @@ echo ""
 
 echo "Done !!!"
 
-sleep 100
+sleep 10
