@@ -5,6 +5,8 @@ cd test
 
 ls
 
+$(pwd)
+
 -v $(pwd)
 
 pwd
