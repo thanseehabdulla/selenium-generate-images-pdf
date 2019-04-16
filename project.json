@@ -5,9 +5,11 @@
   "output_image_folder":"images",
   "output_html_folder":"html",
   "output_image_name":"test",
-  "file_path":"file:///home/sinergia/Desktop/davis/selenium/html/new.html",
+  "file_path":"file:///test/new.html",
   "images":[
+    "test1.png",
     "test2.png",
+    "test3.png",
     "test4.png",
     "test5.png",
     "test6.png",
@@ -17,6 +19,7 @@
     "test10.png"
   ],
   "classes":[
+    "col-lg-6",
     "col-lg-6",
     "col-lg-6",
     "col-lg-6",
