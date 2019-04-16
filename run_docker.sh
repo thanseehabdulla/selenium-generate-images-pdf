@@ -37,4 +37,6 @@ echo ""
 
 echo "Done !!!"
 
-sleep 10
+echo " please run sudo docker cp <container-id>:/test/output/screenshot.pdf /tmp/outputs"
+
+sleep 100
