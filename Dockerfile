@@ -1,5 +1,5 @@
 #Docker image
-FROM ubuntu:18.06
+FROM ubuntu:18.04
 
 MAINTAINER Abdulla Thanseeh <thanseehabdulla@gmail.com>
 
