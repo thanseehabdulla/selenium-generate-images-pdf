@@ -2,16 +2,23 @@
 #/bin/bash
 
 cd test
-
-ls
-
-$(pwd)
-
--v $(pwd)
-
+echo "current working directory"
 pwd
 
 git pull origin master
+
+echo "Enter html path to take screenshot"
+echo "sample path is file:///test/new.html"
+
+read html_path
+
+echo "Enter css class name to take screenshot of div"
+
+echo "sample class is .react-grid-item.react-draggable.react-resizable"
+read css_name
+
+sed -i "/file_path/ s/:\"[^\"]*\"/:\"$html_path\"/" project.json
+sed -i "/selector/ s/:\"[^\"]*\"/:\"$css_name\"/" project.json
 
 echo "Executing the python program to generate images"
 python3 generate_images.py
