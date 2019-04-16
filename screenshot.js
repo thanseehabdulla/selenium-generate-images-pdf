@@ -14,7 +14,10 @@ function timeout(ms) {
 };
 
 (async() => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+    timeout: 10000,
+  });
     const page = await browser.newPage();
     await page.setViewport({width: 5960, height: 14209});
     // await page.goto('http://stackoverflow.com', {waitUntil: 'networkidle2'});
