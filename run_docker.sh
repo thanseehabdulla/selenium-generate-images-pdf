@@ -11,14 +11,13 @@ echo "Enter html path to take screenshot"
 echo "sample path is file:///test/new.html"
 
 read html_path
-
+sed -i "/file_path/ s/:\"[^\"]*\"/:\"$html_path\"/" project.json
 echo "Enter css class name to take screenshot of div"
 
 echo "sample class is .react-grid-item.react-draggable.react-resizable"
 read css_name
-
-sed -i "/file_path/ s/:\"[^\"]*\"/:\"$html_path\"/" project.json
 sed -i "/selector/ s/:\"[^\"]*\"/:\"$css_name\"/" project.json
+
 
 echo "Executing the python program to generate images"
 python3 generate_images.py
@@ -46,4 +45,4 @@ echo "Done !!!"
 
 echo " please run sudo docker cp <container-id>:/test/output/screenshot.pdf /tmp/outputs"
 
-sleep 100
+#sleep 100
