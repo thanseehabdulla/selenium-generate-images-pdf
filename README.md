@@ -25,14 +25,15 @@ Configure Dockerfile
 
 
 ***Pull***
+
 sudo docker pull thanseehabdulla/selenium-puppeteer-generate-images-pdf-html
 
 
-sudo docker run -ti <imageid> bash
+sudo docker run -ti imageid bash
 
 
 # To copy output pdf
-sudo docker cp <container-id>:/test/output/screenshot.pdf ~/Desktop/outputs.pdf
+sudo docker cp container-id:/test/output/screenshot.pdf ~/Desktop/outputs.pdf
 
 
 Happy coding!
